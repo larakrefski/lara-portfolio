@@ -72,8 +72,8 @@ export function Navbar() {
                 className={`
                   relative font-display text-[1.5rem] font-bold uppercase transition-opacity hover:opacity-80 text-[#141e22]
                   ${isContact 
-                    ? 'bg-[#90C9E1] px-[10px] py-[5px] rounded-sm'
-                    : 'py-2' // Adds some hit-area for non-button links
+                    ? 'bg-[#90C9E1] px-[10px] pt-[5px] pb-[1px] rounded-sm'
+                    : 'py-2'
                   }
                 `}
               >

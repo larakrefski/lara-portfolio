@@ -15,8 +15,30 @@ const openSans = Open_Sans({
 // });
 
 export const metadata: Metadata = {
-  title: "Lara Krefski - Product Designer",
-  description: "Lara Krefski is a product designer specializing in crafting intuitive and engaging digital experiences. With a passion for user-centered design, Lara combines creativity with strategic thinking to deliver impactful solutions that resonate with users and drive business success.",
+  title: "Lara Krefski | Principal Web Engineer & Engineering Manager",
+  description: "Principal Web Engineer & Engineering Manager specializing in scalable web architecture, clean code, and technical leadership. Building the future of the web with a focus on excellence.",
+  openGraph: {
+    title: "Lara Krefski | Principal Web Engineer",
+    description: "Principal Web Engineer & Engineering Manager specializing in scalable web architecture and technical leadership.",
+    url: "https://larakrefski.com",
+    siteName: "Lara Krefski",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lara Krefski - Principal Web Engineer & Engineering Manager",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lara Krefski | Principal Web Engineer",
+    description: "Specializing in scalable web architecture and technical leadership.",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
