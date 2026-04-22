@@ -36,7 +36,7 @@ export function Hero() {
               <a href="#projects" className="inline-flex items-center justify-center leading-none bg-[#90C9E1] hover:opacity-80 transition-opacity text-[#141e22] text-2xl uppercase px-6 py-2 rounded-xl font-bold transition-all">
                 View My Work
               </a>
-              <a href="/resume.pdf" className="inline-flex items-center justify-center leading-none hover:opacity-80 transition-opacity border-3 border-[#90C9E1] text-white text-2xl uppercase px-6 py-2 rounded-xl font-bold transition-all">
+              <a href="/lara-krefski-resume.pdf" target="_blank" className="inline-flex items-center justify-center leading-none hover:opacity-80 transition-opacity border-3 border-[#90C9E1] text-white text-2xl uppercase px-6 py-2 rounded-xl font-bold transition-all">
                 Download Resume
               </a>
             </div>
