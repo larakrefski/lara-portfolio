@@ -19,7 +19,7 @@ export function About() {
             </h3>
             <p className="text-base text-[#141e22] leading-relaxed">
               In my 25 years of building for the web, I’ve learned that the
-              "best" technology is the one that actually helps a business grow.
+              &quot;best&quot; technology is the one that actually helps a business grow.
               I’ve spent years architecting complex, custom sites from the
               ground up using React and Next.js, so I know exactly what goes
               into building a high-performance application.
