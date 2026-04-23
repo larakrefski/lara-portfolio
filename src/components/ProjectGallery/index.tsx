@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Project } from '@/types/project';
 import { ProjectModal } from '../ProjectModal'; 
@@ -11,6 +11,22 @@ interface ProjectGalleryProps {
 
 export function ProjectGallery({ projects }: ProjectGalleryProps) {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  // Lock/Unlock scroll logic
+  useEffect(() => {
+    if (selectedProject) {
+      // Prevent scrolling on the background
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Re-enable scrolling when modal is closed
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function: ensures scrolling is restored if the component unmounts
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedProject]);
 
   return (
     <section className="py-20 bg-slate-200" id="projects">

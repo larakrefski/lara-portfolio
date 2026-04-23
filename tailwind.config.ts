@@ -13,6 +13,9 @@ const config: Config = {
         // Use Orkney for headings or specific brand elements
         display: ['orkney', 'var(--font-orkney)', 'sans-serif'],
       },
+      screens: {
+        'tablet-lg': '820px',
+      },
     },
   },
   plugins: [],

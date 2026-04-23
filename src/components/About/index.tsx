@@ -11,31 +11,20 @@ export function About() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div className="flex flex-col tablet-lg:grid tablet-lg:grid-cols-12 gap-12 items-center">
           {/* Left Column */}
-          <div className="md:col-span-8 space-y-6">
+          <div className="tablet-lg:col-span-8 space-y-6 order-1">
             <h3 className="text-2xl md:text-[2.2rem] font-sans font-extrabold text-[#141e22]">
               The Right Tool for the Job
             </h3>
             <p className="text-base text-[#141e22] leading-relaxed">
-              In my 25 years of building for the web, I’ve learned that the
-              "best" technology is the one that actually helps a business grow.
-              I’ve spent years architecting complex, custom sites from the
-              ground up using React and Next.js, so I know exactly what goes
-              into building a high-performance application.
+              In my 10+ years of building for the web, I’ve learned that the &quot;best&quot; technology is the one that actually helps a business grow. I’ve spent years architecting complex, custom applications from the ground up using React and Next.js, so I know exactly what goes into building a high-performance ecosystem at scale.
             </p>
             <p className="text-base text-[#141e22] leading-relaxed">
-              Today, I often lean into Webflow because of the incredible speed
-              it offers. I use my engineering background to push Webflow
-              further—like building custom ROI calculators in JavaScript—while
-              utilizing the Webflow CMS to keep content management simple.
+              Today, I often lean into Webflow because of the incredible speed it offers for high-velocity marketing. I use my engineering background to push Webflow further—like building custom logic in JavaScript and utilizing Tailwind CSS principles to maintain a clean, professional design system—while keeping content management simple for the whole team.
             </p>
             <p className="text-base text-[#141e22] leading-relaxed">
-              Whether I’m coding a custom application in Next.js or a
-              high-velocity marketing site in Webflow, my goal is the same:
-              building a reliable, scalable foundation (backed by my experience
-              in MySQL and Sanity) that removes technical bottlenecks and lets
-              the business move at full speed.
+              Whether I’m coding a custom application in Next.js or a high-performance site in Webflow, my goal is the same: building a reliable, scalable foundation that removes technical bottlenecks and lets the business move at full speed.
             </p>
 
             {/* Container for the two bullet points */}
@@ -69,12 +58,11 @@ export function About() {
                   Principal Front-End Engineer
                 </p>
               </div>
-
             </div>
           </div>
 
           {/* Right Column */}
-          <div className="md:col-span-4 relative aspect-square overflow-hidden">
+          <div className="tablet-lg:col-span-4 w-full max-w-md tablet-lg:max-w-none mx-auto relative aspect-square overflow-hidden order-2">
             <Image
               src="/images/about/about-square-image.jpg"
               alt="Webflow, React, Next.js, and MySQL logos"
