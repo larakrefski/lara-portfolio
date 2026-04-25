@@ -11,9 +11,9 @@ export function About() {
           </h2>
         </div>
 
-        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-12 items-center">
+        <div className="flex flex-col tablet:grid tablet:grid-cols-12 gap-12 items-center">
           {/* Left Column */}
-          <div className="lg:col-span-8 space-y-6 order-1">
+          <div className="tablet:col-span-8 space-y-6 order-1">
             <h3 className="text-2xl md:text-[2.2rem] font-sans font-extrabold text-[#141e22]">
               The Right Tool for the Job
             </h3>
@@ -62,7 +62,7 @@ export function About() {
           </div>
 
           {/* Right Column */}
-          <div className="lg:col-span-4 w-full max-w-md lg:max-w-none mx-auto relative aspect-square overflow-hidden order-2">
+          <div className="tablet:col-span-4 w-full max-w-md tablet:max-w-none mx-auto relative aspect-square overflow-hidden order-2">
             <Image
               src="/images/about/about-square-image.jpg"
               alt="Webflow, React, Next.js, and Tailwind logos"

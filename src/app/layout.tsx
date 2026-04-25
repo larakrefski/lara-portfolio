@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Open_Sans } from 'next/font/google';
-// import localFont from 'next/font/local';
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -53,6 +55,13 @@ export default function RootLayout({
     >
       <body className="font-sans min-h-full flex flex-col" suppressHydrationWarning>
         {children}
+
+        {/* Vercel Tools */}
+        <Analytics />
+        <SpeedInsights />
+        
+        {/* Google Analytics 4 */}
+        <GoogleAnalytics gaId="G-EBFSHE9VND" />
       </body>
     </html>
   );

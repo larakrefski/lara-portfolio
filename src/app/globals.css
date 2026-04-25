@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-tablet: 1024px;
+
+  --font-sans: var(--font-open-sans), ui-sans-serif, system-ui;
+  --font-display: orkney, var(--font-orkney), sans-serif;
+}
+
 @font-face {
   font-family: 'Orkney-Local';
   /* Starting with / tells the browser to look in the 'public' folder */
