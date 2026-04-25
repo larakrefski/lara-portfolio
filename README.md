@@ -33,21 +33,19 @@ A high-performance, responsive professional portfolio built with the latest web 
     ├── sanity/     # CMS Configuration
     └── types/      # TypeScript Definitions
 
-🛠 Installation & Setup
-    1. Clone the repository:
-        In Bash run the below command:
-          git clone [https://github.com/your-username/lara-portfolio.git](https://github.com/your-username/lara-portfolio.git)
+## 🛠 Installation & Setup
+```text
+    1. **Clone the repo**
+        Open your terminal and run `git clone [https://github.com/your-username/lara-portfolio.git](https://github.com/your-username/lara-portfolio.git)`
 
-    2. Install dependencies:
-        In Bash run the below command:
-          npm install
+    2. **Install dependencies**
+        Open your terminal and run `npm install`
 
-    3. Set up environment variables:
-        Create a .env.local file and add your GA4 ID:
+    3. **Set up environment variables**
+        Create your `.env.local` file and add your GA4 ID:
           NEXT_PUBLIC_GA_ID=your-google-analytics-id
 
-    4. Run the development server:
-        In Bash run the below command:
-          npm run dev
+    4. **Run the development server**
+        Open your terminal and run `npm run dev`
 
 Built by Lara
