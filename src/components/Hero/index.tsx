@@ -18,7 +18,7 @@ export function Hero() {
           fetchPriority="high" 
           className="object-cover object-center"
           quality={80} 
-          sizes="100vw"
+          // sizes="100vw"
         />
       </div>
 
