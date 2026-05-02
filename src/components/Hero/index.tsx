@@ -15,6 +15,7 @@ export function Hero() {
           alt="Hero background"
           fill
           priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           className="object-cover object-center"
           quality={90}
         />
