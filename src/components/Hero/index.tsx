@@ -15,9 +15,10 @@ export function Hero() {
           alt="Hero background"
           fill
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+          fetchPriority="high" 
           className="object-cover object-center"
-          quality={90}
+          quality={80} 
+          sizes="100vw"
         />
       </div>
 
