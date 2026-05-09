@@ -3,7 +3,8 @@ import { Open_Sans } from 'next/font/google';
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
+
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -53,7 +54,20 @@ export default function RootLayout({
       lang="en"
       className={`${openSans.variable} h-full antialiased`}
     >
+      {/* Google Tag Manager */}
+      {process.env.NEXT_PUBLIC_GTM_ID ? (
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+      ) : null}  
       <body className="font-sans min-h-full flex flex-col" suppressHydrationWarning>
+        {/* GTM Noscript Fallback */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         {children}
 
         {/* Vercel Tools */}
@@ -61,9 +75,10 @@ export default function RootLayout({
         <SpeedInsights />
         
         {/* Google Analytics 4 */}
-        {process.env.NEXT_PUBLIC_GA_ID ? (
+        {/* {process.env.NEXT_PUBLIC_GA_ID ? (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-        ) : null}
+        ) : null} */}
+
       </body>
     </html>
   );
