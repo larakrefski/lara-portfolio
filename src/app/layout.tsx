@@ -54,6 +54,9 @@ export default function RootLayout({
       lang="en"
       className={`${openSans.variable} h-full antialiased`}
     >
+      <head>
+        <meta name="norton-safeweb-site-verification" content="P8R064QHJ2DZ16QTV1-VXGQJ9MRNKOW9VCS-0G4B3MSTFL0YK8DXW8IQ1050FIKM9FGWTZB7XPX074E4AG7XU7JPMZGUNMLD17B-SYQ4YOKNVUQ41T4VCB5DEPVSBN4U" />
+      </head>
       <body className="font-sans min-h-full flex flex-col" suppressHydrationWarning>
         {children}
 
